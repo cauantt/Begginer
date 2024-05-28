@@ -1,0 +1,71 @@
+<style> 
+
+body {
+
+    background-color:  rgb(132, 132, 241)
+
+}
+
+.square { 
+
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+}
+
+.circle {
+
+    background-color: black;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 62%;
+
+
+}
+
+.container {
+    position: relative;
+}
+
+.title {
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+}
+.year {
+    font: normal 15pt serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;}
+.radiobutton {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 45.6%;
+    top: 36%;
+}
+.verificate {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 40.6%;
+    top: 41%;
+}
+.answer {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font: normal 13pt serif;
+    left: 50%;
+    top: 47%;
+}
+
+</style>

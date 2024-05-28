@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div  id="container">
+
+        <div class="content" id="whitebox">
+            
+                <div id="group">
+                    <div class="lines" id="line1">
+                        <p>Numero 1 a 100:</p>
+                         <input id="start" type="number">
+                         <button onclick="contar()" id="enviar"type="submit">Submit</button>
+                    </div>
+                    <div id="res"><p></p></div>
+                    <button onclick="finalizar()" id="enviar"type="submit">Finish</button>
+                    
+                   
+                  
+                </div>
+
+                <div id="res"><p id="text"></p></div>
+           
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var array = []
+        var count = 0
+        var menor = 100
+        var maior = 0
+        
+
+        
+        function contar(){
+
+            var start = parseInt(document.querySelector("#start").value);
+            var geral = document.querySelector("#res");
+            
+
+
+            if (isNaN(start)){
+            
+              alert("Preencha o campo");
+              return;}
+            
+
+            else {
+                
+                if(start <= 100 && start >= 1) {
+
+                if (start > maior) {
+
+                    maior = start;
+                }
+
+                if  (start < menor) {
+
+                    menor = start;
+
+                }
+
+                geral.innerHTML += `<p> ${start} foi adicionado! </p>`
+
+                array.push(start) 
+            
+                count += 1}
+
+                    
+           
+
+                else {
+                    alert("Numero invalido")}}}
+
+
+
+    function finalizar(){
+
+        var start = parseInt(document.querySelector("#start").value);
+        var geral = document.querySelector("#res");
+
+
+        geral.innerHTML = ` <p> numeros adicionados: ${count} <br> menor numero: ${menor} <br> maior numero: ${maior}</p> `
+
+
+
+
+    }
+
+
+                
+        
+            
+
+           
+        
+
+
+                                    
+
+    </script>
+    
+</body>
+</html>

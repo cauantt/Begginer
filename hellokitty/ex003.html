@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">AUla 3</title>
+    <style>
+        body {
+
+            font: normal 15pt arial
+        }   
+
+        button {
+
+            width: 200px;
+            background-color: white;
+            
+        }
+        #answer{
+
+            font: normal 15pt Arial
+            
+
+        }
+
+        body {
+
+            background-color: pink;
+            background-image: url("https://addons-media.operacdn.com/media/CACHE/images/themes/35/125435/1.0-rev1/images/fb3b1b8e-aecc-48a0-9af6-7574282690bb/1ef92ee9b61afd52e496df9c70b81a41.jpg");
+           
+            
+            
+
+            
+            
+        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        h1 {
+
+            color: green 
+
+        }
+
+
+
+ 
+    </style>
+</head>
+<body>
+    <div id="escrita">
+    <h1 id="title">Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"    >
+    <input type="button" value="somar" onclick="somar()"> Resultado =  
+    <button><div id="answer">Answer</div></button>
+    </div>
+    
+    <script>
+        
+        function somar() {
+
+            var a = window.document.getElementById("txtn1").value;
+            var b = window.document.getElementById("txtn2").value;
+            
+            var n1 = parseFloat(a);
+            var n2 = parseFloat(b);
+
+            var soma = n1 + n2;
+            
+            
+            var c = window.document.getElementById("answer");
+           
+            c.innerText = soma;
+            
+        }
+
+    </script>
+</body>
+
+</html>

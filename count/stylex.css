@@ -1,0 +1,113 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+#container {
+
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    justify-content: center;
+    
+    
+    
+
+}
+
+
+#whitebox{
+
+    background-color: white;
+    height: auto;
+    width: 600px;
+    height: max-content;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 100px;
+    border-radius: 10px;
+    
+    
+    
+   
+    padding: 20px;
+
+
+}
+
+p {
+
+    font: bold 20pt Poppins;
+    height: auto;
+    
+
+    word-wrap: break-word; /* Para quebrar palavras longas */
+        /* ou */
+    overflow-wrap: break-word; /* Outra opção para quebrar palavras longas */
+      
+
+
+}
+
+
+
+
+input{
+
+        margin-left: 20px;
+        height: 30px;
+}
+
+#line1{
+
+    margin-top: 30px;
+
+
+}
+
+.lines{
+
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#res{
+
+    margin-top: 0px;
+    width: 560px;
+
+}
+
+#group{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+
+#enviar{
+
+
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+
+
+}

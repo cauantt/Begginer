@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting</title>
+    <link rel="stylesheet" href="stylex.css">
+</head>
+<body>
+    <div  id="container">
+
+        <div class="content" id="whitebox">
+            
+                <div id="group">
+                    <div class="lines" id="line1">
+                        <p>Inicio:</p>
+                         <input id="start" type="number">
+                    </div>
+                    <div class="lines" id="line2"><p>Fim:</p>
+                        <input id="end" type="number">  </div>
+                    <div  class="lines" ><p>Passo:
+                        <input id="step" type="number">
+                    </p></div>
+                    <div class="lines" id="line4">
+                        <p>Contagem:</p>
+                        <button onclick="contar()" id="enviar"type="submit">Submit</button>
+                    </div>
+                    
+                </div>
+
+                <div id="res"><p id="text"></p></div>
+           
+
+
+        </div>
+    </div>
+
+
+    <script>
+        
+        function contar(){
+
+            var start = parseInt( document.querySelector("#start").value);
+            var end = parseInt(document.querySelector("#end").value);
+            var step = parseInt( document.querySelector("#step").value);
+            var res = document.querySelector("#text");
+
+            res.innerText = "";
+
+            for (let i = start; i <= end; i+=step){
+
+                res.innerText += i + "- ";
+            }
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+      
+      h1 {
+
+text-align: center;
+color: white;
+}
+
+body{
+
+background-color: grey;
+}
+
+.square {
+
+
+background-color: white;
+width: 500px;
+height: 300px;
+margin: auto;
+font: normal 10pt; 
+
+}
+.circle{
+
+
+width: 200px;
+height: 200px;
+background-color: black;
+border-radius: 50%;
+top: 38%;
+left: 50%;
+right: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+background-image: url("https://www.aluralingua.com.br/artigos/assets/night.jpg");
+
+
+}
+
+p {
+
+text-align: center;
+font: normal 10pt;
+top: 15%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+
+}
+.container {
+position: relative;
+}
+
+.rodape {
+
+text-align: center;
+color: white;
+position: absolute;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 60%;
+
+
+}
+
+    </style>
+</head>
+<body class="corpo">
+    <h1 id="title">Hora do dia</h1>
+    <div class="container"></div>
+    <!-- <div class="square"></div> -->
+    <div class="circle"></div> 
+    <p><strong>Agora são <span id="hora"></span> horas</strong></p>
+    <footer class="rodape">@CursoEmVideo</footer>
+    <script>    
+       
+        var now = new Date();
+        var horaAtual = 20; 
+
+        var horaElement = document.getElementById("hora");
+        var circle = document.querySelector(".circle");
+        var cor = document.querySelector(".corpo");
+        var letra= document.getElementById("title")
+        var rodape = document.querySelector(".rodape")
+
+        
+        horaElement.innerText = horaAtual;
+
+        
+        if (horaAtual < 12 && horaAtual >= 6) {
+            circle.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_rHMuoei-SPwwY0mNY4hqjY-tUT-YOikhw&s")';
+            cor.style.backgroundColor = "rgb(245, 222, 179)";
+            title.style.color = "black"
+            rodape.style.color = "black"
+        } else if (horaAtual < 20 && horaAtual >= 12) {
+            circle.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSticuYOTez8YMHxpkK5btVPJFOSc1No8AL-A&s")';
+            cor.style.backgroundColor = "rgb(205, 133, 63)";
+            title.style.color = "black"
+            rodape.style.color = "black"
+        } else {
+            // Pa
+        }
+    </script>
+</body>
+</html>
